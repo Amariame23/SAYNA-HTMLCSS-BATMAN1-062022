@@ -1,0 +1,26 @@
+body {
+    background-image: url("C:/Users/MARIAME/Desktop/Sayna/batman/SAYNA-HTMLCSS-BATMAN1-062022/Assets/Illustrations/Bathome1.png");
+}
+
+header {
+    border-width: 0px 2px 2px 2px;
+    border-style: solid;
+    border-color: #BCBBBD;
+}
+
+.logo {
+    float: ;
+}
+
+h1 {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: right;
+}
+
+#container {
+    border-width: 1px 2px 2px 2px;
+    border-style: solid;
+    border-color: #BCBBBD;
+}
