@@ -1,13 +1,28 @@
-body {
-    background-image: url("../Illustrations/Bathome1.png");
+@font-face {
+    font-family: 'Rajdhani', sans-serif;
+    src: url("../fonts/Rajdhani/Rajdhani-Medium.ttf");
+    src: url("../fonts/Rajdhani/Rajdhani-Bold.ttf");
+    src: format("truetype");
+    font-family: 'Space Grotesk', sans-serif;
+    src: url("../fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf");
+    src: url("../fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf");
+    src: format("truetype");
 }
 
-.logo {}
 
-.menu {
-    text-decoration: underline;
+/* PERMET DE NE PAS AVOIR D'ESPACE ENTRE LES BALISES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("../Illustrations/Bathome1.png");
+    background-repeat: no-repeat;
+    background-color: black;
+    /* margin: 0 102px; */
     color: white;
-    font-weight: bold;
 }
 
 header {
@@ -15,13 +30,57 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 19vh;
+    /* width: 100%; */
+    border-right: #BCBBBD 3px solid;
+    border-left: #BCBBBD 3px solid;
+    margin: 0 102px;
+}
+
+main {
+    border: #BCBBBD 3px solid;
+    margin: 0 102px;
 }
 
 nav {
     /* border: 2px solid white; */
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 30px;
 }
+
+.home {
+    color: white;
+    font-family: 'SpaceGrotesk-Regular';
+}
+
+.pIntro {
+    color: white;
+    display: flex;
+    font-family: 'SpaceGrotesk-Regular';
+    justify-content: center;
+    text-indent: 5px;
+    font-size: 20px;
+}
+
+.h2Intro {
+    color: white;
+    font-family: 'SpaceGrotesk-bold';
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* .container { */
+
+
+/* border: solid 1px #BCBBBD; */
+
+
+/* width: 80%; */
+
+
+/* } */
