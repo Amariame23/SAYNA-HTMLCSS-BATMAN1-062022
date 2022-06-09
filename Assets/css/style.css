@@ -41,31 +41,53 @@ body {
     color: white;
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 19vh;
+    height: 23vh;
     /* width: 100%; */
-    border-right: #BCBBBD 3px solid;
-    border-left: #BCBBBD 3px solid;
+    border: rgba(188, 187, 189, 0.4) 3px solid;
+    border-top: none;
+    /* border: rgba(188, 187, 189, 0.867) 3px solid; */
     margin: 0 102px;
+    padding-bottom: 60px;
+}
+
+.logo a:hover {
+    color: #FFFF00;
+    /* color: rgb(255, 255, 0); */
+    /* border: 3px solid white; */
 }
 
 li {
     display: inline;
 }
 
+li a {
+    text-decoration: underline;
+}
+
 main {
-    border: #BCBBBD 3px solid;
+    border: rgba(188, 187, 189, 0.4) 3px solid;
     margin: 0 102px;
+}
+
+#container {
+    /* border: #BCBBBD 3px solid; */
+    padding-top: 50px;
 }
 
 #intro {
     /* border: #BCBBBD 3px solid; */
     text-align: center;
     padding: 70px;
+    margin-top: 90px;
 }
 
 .pIntro {
@@ -78,6 +100,10 @@ main {
     font-family: 'Space_Grotesk_Bold';
     font-size: 25px;
     padding: 20px;
+}
+
+#boutonIntro {
+    margin-top: 30px;
 }
 
 #boutonIntro a {
@@ -112,23 +138,16 @@ main {
     margin: auto;
 }
 
+#logoIntro img:hover {
+    background-color: #FFFF00;
+}
 
-/* #fbk { */
-
-
-/* display: grid; */
-
-
-/* float: right; */
-
-
-/* padding-right: -150px; */
-
-
-/* } */
+#fleche {
+    text-align: center;
+    margin-top: 100px;
+}
 
 nav {
-    /* border: 2px solid white; */
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -141,32 +160,47 @@ nav {
     font-family: 'Space_Grotesk_Regular';
 }
 
-
-/* .pIntro { */
-
-
-/* color: white; */
-
-
-/* display: flex; */
-
-
-/* font-family: 'Space_Grotesk_Regular'; */
-
-
-/* justify-content: center; */
-
-
-/* text-indent: 5px; */
-
-
-/* font-size: 20px; */
-
-
-/* } */
-
 span {
     display: block;
+}
+
+section {
+    padding: 0 102px;
+    margin: 20vh 0;
+}
+
+.section_texte {
+    text-align: justify;
+    display: block;
+}
+
+.section_texte p {
+    margin-top: 30px;
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 22px;
+}
+
+.section_card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.card {
+    width: 28%;
+}
+
+.card img {
+    max-width: 100%;
+    transition: with 2s;
+}
+
+.card h5 {
+    text-align: center;
+    margin: 0 3px;
+    font-family: 'Space_Grotesk_Regular';
+    font-size: 13px;
 }
 
 
