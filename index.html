@@ -25,11 +25,11 @@
 
                     </li>
                     <li>
-                        <a class="home" href="#">HOME</a>
+                        <a class="home" href="#"></a>
 
                     </li>
                     <li>
-                        <a class="home" href="#">HOME</a>
+                        <a class="home" href="#"></a>
 
                     </li>
                 </ul>
@@ -44,7 +44,7 @@
         <section id="container">
             <div id="intro">
                 <p class="pIntro">
-                    Au nom de ses parents assassinés, Bruce Wayne mène <br> une guerre éternelle contre les criminels de Gotham City. <br> Il est vengeur. Il est la nuit.
+                    <span>Au nom de ses parents assassinés, Bruce Wayne mène</span> <span> une guerre éternelle contre les criminels de Gotham City.</span> <span>Il est vengeur. Il est la nuit.</span>
                 </p>
                 <h2 class="h2Intro"> Il est Batman.</h2>
                 <div id="boutonIntro">
@@ -54,9 +54,11 @@
             </div>
             <div id="logoIntro">
                 <img alt="logoBATMAN" src=" ./Assets/Logos/logo_bat_fleche.png" />
-                <img alt="fbk" src=" ./Assets/Logos/icon_facebook.png" />
-                <img alt="instagram" src=" ./Assets/Logos/icon_ig.png" />
-                <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" />
+                <div id="fbk">
+                    <img alt="fbk" src=" ./Assets/Logos/icon_facebook.png" />
+                    <img alt="instagram" src=" ./Assets/Logos/icon_ig.png" />
+                    <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" />
+                </div>
                 <img alt="logoBATMAN" src=" ./Assets/Logos/logo_bat_fleche_2.png" />
             </div>
             <div id="fleche">
@@ -196,28 +198,33 @@
                 <h1>PRENONS CONTACT</h1>
                 <!-- formulaire -->
                 <form action="#">
-                    <h2>Adresse email</h2>
+                    <label>ADRESSE MAIL</label><br>
                     <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email"><br><br>
-                    <h2>NEWSLETTER</h2>
+                    <label>NEWSLETTER</label><br>
                     <label for="#">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
                     Batman :</label>
                     <input type="checkbox" name="news" id="news"><br><br><br>
-                    <label for="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</label>
-                    <input list="frequence">
-                    <datalist id="frequence">
-                    <option value="Une fois par semaine">
-                    <option value="Une fois toutes les 2 semaines (2fois/mois)">
-                    <option value="Une fois par mois">
-                    <option value="Une fois tous les trois mois">
-                    <option value="Une fois tous les six mois">
-                  </datalist><br><br><br>
+                    <div>
+                        <label for="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</label>
+                        <input list="frequence">
+                        <datalist id="frequence">
+                            <option value="Une fois par semaine">
+                            <option value="Une fois toutes les 2 semaines (2fois/mois)">
+                            <option value="Une fois par mois">
+                            <option value="Une fois tous les trois mois">
+                            <option value="Une fois tous les six mois">
+                        </datalist><br><br><br>
+                        <span>
+                            <img src="./Assets/Logos/icon_fleche_2.png" alt="">
+                        </span>
+                    </div>
                     <label for="#">Souhaitez-vous recevoir des news</label><br>
                     <input type="button" value="Des films">
                     <input type="button" value="Des comics">
                     <input type="button" value="De tout"><br><br>
-                    <h2>Message</h2>
-                    <textarea name="commentaire" id="commentaire" cols="30" rows="10">Laissez un commentaire pour la communauté</textarea>
-
+                    <label for="">MESSAGE</label><br>
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="10">Laissez un commentaire pour la communauté</textarea><br>
+                    <input type="submit" value="Confirmer">
                 </form>
             </div>
         </section>
@@ -242,12 +249,14 @@
             <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
         </div>
         <div>
-            <img src="./Assets/Logos/logo_sayna_white.png" alt="sayna">
-            <img src="./Assets/Logos/icon_x.png" alt="x">
-            <img src="./Assets/Logos/icon_DC.png" alt="DC">
-            <img src="./Assets/Logos/icon_facebook.png" alt="fbk">
-            <img src="./Assets/Logos/icon_ig.png" alt="instagram">
-            <img src="./Assets/Logos/icon_tw.png" alt="twitter">
+            <a href="#">
+                <img src="./Assets/Logos/logo_sayna_white.png" alt="sayna">
+                <img src="./Assets/Logos/icon_x.png" alt="x">
+                <img src="./Assets/Logos/icon_DC.png" alt="DC">
+            </a>
+            <a href="#"><img src="./Assets/Logos/icon_facebook.png" alt="fbk"></a>
+            <a href="#"><img src="./Assets/Logos/icon_ig.png" alt="instagram"></a>
+            <a href="#"><img src="./Assets/Logos/icon_tw.png" alt="twitter"></a>
         </div>
     </footer>
 </body>
