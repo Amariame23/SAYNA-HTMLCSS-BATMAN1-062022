@@ -92,7 +92,7 @@
             </div>
         </section>
         <!-- Nemesis -->
-        <section id="Nemesis">
+        <section id="nemesis">
             <div id="arc">
                 <h1 class="H1"> NÉMÉSIS</h1>
                 <img src="./Assets/Illustrations/Bathome13.png" alt="Arc">
@@ -171,7 +171,7 @@
             </div>
         </section>
         <!-- Multimédia -->
-        <section>
+        <section id="multimedia">
             <div id="multimedia">
                 <h1>
                     MULTIMÉDIA
@@ -201,35 +201,37 @@
             <div id="contact">
                 <h1>PRENONS CONTACT</h1>
                 <!-- formulaire -->
-                <form action="#">
-                    <label>ADRESSE MAIL</label><br>
-                    <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email"><br><br>
-                    <label>NEWSLETTER</label><br>
-                    <label for="#">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                <div class="form">
+                    <form action="#">
+                        <label class="label">ADRESSE MAIL</label><br><br>
+                        <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email"><br><br>
+                        <label class="label">NEWSLETTER</label><br><br>
+                        <label for="#">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> de 
                     Batman :</label>
-                    <input type="checkbox" name="news" id="news"><br><br><br>
-                    <div>
-                        <label for="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</label>
-                        <input list="frequence">
-                        <datalist id="frequence">
+                        <input type="checkbox" name="news" id="news"><br><br><br>
+                        <div>
+                            <label for="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter  <span>
+                                <img src="./Assets/Logos/icon_fleche_2.png" alt="">
+                            </span></label>
+                            <input list="frequence">
+                            <datalist id="frequence">
                             <option value="Une fois par semaine">
                             <option value="Une fois toutes les 2 semaines (2fois/mois)">
                             <option value="Une fois par mois">
                             <option value="Une fois tous les trois mois">
                             <option value="Une fois tous les six mois">
                         </datalist><br><br><br>
-                        <span>
-                            <img src="./Assets/Logos/icon_fleche_2.png" alt="">
-                        </span>
-                    </div>
-                    <label for="#">Souhaitez-vous recevoir des news</label><br>
-                    <input type="button" value="Des films">
-                    <input type="button" value="Des comics">
-                    <input type="button" value="De tout"><br><br>
-                    <label for="">MESSAGE</label><br>
-                    <textarea name="commentaire" id="commentaire" cols="30" rows="10">Laissez un commentaire pour la communauté</textarea><br>
-                    <input type="submit" value="Confirmer">
-                </form>
+
+                        </div>
+                        <label for="#">Souhaitez-vous recevoir des news</label><br>
+                        <input type="button" value="Des films">
+                        <input type="button" value="Des comics">
+                        <input type="button" value="De tout"><br><br>
+                        <label for="" class="label">MESSAGE</label><br><br>
+                        <textarea name="commentaire" id="commentaire" cols="30" rows="10">Laissez un commentaire pour la communauté</textarea><br>
+                        <input type="submit" value="Confirmer">
+                    </form>
+                </div>
             </div>
         </section>
         <!-- le pied -->

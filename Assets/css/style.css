@@ -44,23 +44,18 @@
                             }
                             
                             header {
-                                /* border: 2px solid blue; */
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
                                 height: 23vh;
-                                /* width: 100%; */
                                 border: rgba(188, 187, 189, 0.4) 3px solid;
                                 border-top: none;
-                                /* border: rgba(188, 187, 189, 0.867) 3px solid; */
                                 margin: 0 102px;
                                 padding-bottom: 60px;
                             }
                             
                             .logo a:hover {
                                 color: #FFFF00;
-                                /* color: rgb(255, 255, 0); */
-                                /* border: 3px solid white; */
                             }
                             
                             li {
@@ -77,13 +72,11 @@
                             }
                             
                             #container {
-                                /* border: #BCBBBD 3px solid; */
                                 padding-top: 50px;
                             }
                             /* début mise en forme de la section intro */
                             
                             #intro {
-                                /* border: #BCBBBD 3px solid; */
                                 text-align: center;
                                 padding: 70px;
                                 margin-top: 90px;
@@ -167,7 +160,11 @@
                             /* fin mise en forme de la section intro */
                             /* début mise en forme des autres sections sans la section intro */
                             
-                            section {
+                            #batman,
+                            #nemesis,
+                            #allies,
+                            #league .section_texte,
+                            #multimedia {
                                 padding: 0 102px;
                                 margin: 20vh 0;
                             }
@@ -175,7 +172,6 @@
                             .section_texte {
                                 text-align: justify;
                                 display: block;
-                                /* margin-top: -130px; */
                             }
                             
                             .section_texte h1 {
@@ -198,11 +194,10 @@
                             }
                             
                             .imgleague {
-                                /* border: #FFFF00 3px solid; */
                                 display: flex;
                                 justify-content: center;
-                                margin-top: 70px;
-                                margin: 0;
+                                margin-top: -50px;
+                                /* border: #FFFF00 3px solid; */
                             }
                             
                             .card {
@@ -219,7 +214,6 @@
                                 margin-top: 10px;
                                 font-family: 'Space_Grotesk_Regular';
                                 font-size: 13px;
-                                /* border: #FFFF00 3px solid; */
                             }
                             /* style image au niveau du titre Némésis */
                             
@@ -240,8 +234,6 @@
                             /* style image batman au niveau de la section Allies */
                             
                             #batmanAllies {
-                                /* border: solid 1px red; */
-                                /* float: right; */
                                 display: flex;
                                 justify-content: space-between;
                                 margin-top: -180px;
@@ -249,22 +241,17 @@
                             }
                             
                             #batmanAllies img {
-                                /* border: solid 1px #BCBBBD; */
-                                /* width: 40%; */
                                 height: 50vh;
                                 margin-left: -50px;
                                 display: block;
-                                /* float: right; */
                             }
                             
                             #batmanAllies H1 {
-                                /* border: solid 1px yellow; */
                                 margin-top: 150px;
                             }
                             /* multimédia */
                             
                             #imgmultimedia {
-                                /* border: #FFFF00 3px solid; */
                                 display: flex;
                                 flex-direction: row;
                                 justify-content: space-between;
@@ -277,13 +264,11 @@
                             }
                             
                             .batmanMultimedia {
-                                /* border: solid 1px red; */
                                 overflow: auto;
                             }
                             
                             .batmanMultimedia img {
                                 float: left;
-                                /* border: 1px solid white; */
                                 border-right: none;
                                 height: 34vh;
                             }
@@ -303,7 +288,6 @@
                             .prgph h3,
                             .prgph.p3,
                             .prgph .p4 {
-                                /* line-height: 1.7; */
                                 font-family: 'Space_Grotesk_Regular';
                                 font-size: 12px;
                             }
@@ -326,11 +310,32 @@
                             
                             #contact {
                                 border: solid 2px red;
-                                margin-left: -204px;
-                                width: 100vw;
-                                /* text-align: center; */
-                                /* border-right: none;
-                                border-left: none; */
+                                padding: 0 270px;
+                                width: 90%;
+                                margin-left: -100px;
+                                background-image: linear-gradient( to right, rgba(237, 222, 191, 0.3), rgba(25, 88, 125, 0.4));
+                            }
+                            
+                            #contact h1 {
+                                text-align: center;
+                                padding-top: 20px;
+                                font-family: 'Rajdhani-Medium';
+                                font-size: 28px;
+                            }
+                            
+                            .form {
+                                border: solid 2px yellow;
+                                margin-top: 90px;
+                            }
+                            
+                            .label {
+                                font-family: 'Space_Grotesk_Regular';
+                                font-size: 20px;
+                            }
+                            
+                            .form span img {
+                                width: 2%;
+                                border: solid 1px green;
                             }
                             /* display: flex;
                          justify-content: flex-start;
