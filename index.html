@@ -54,9 +54,12 @@
             </div>
             <div id="logoIntro">
                 <img alt="logoBATMAN" src=" ./Assets/Logos/logo_bat_fleche.png" />
-                <img alt="fbk" src=" ./Assets/Logos/icon_facebook.png" />
-                <img alt="instagram" src=" ./Assets/Logos/icon_ig.png" />
-                <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" />
+                <div>
+                    <img alt="fbk" src=" ./Assets/Logos/icon_facebook.png" />
+                    <img alt="instagram" src=" ./Assets/Logos/icon_ig.png" />
+                    <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" />
+                </div>
+
                 <img alt="logoBATMAN" src=" ./Assets/Logos/logo_bat_fleche_2.png" />
             </div>
             <div id="fleche">
@@ -203,66 +206,89 @@
                 <!-- formulaire -->
                 <div class="form">
                     <form action="#">
+                        <!-- ADRESSE EMAIL -->
                         <label class="label">ADRESSE MAIL</label><br><br>
-                        <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email"><br><br>
+                        <div class="email">
+                            <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email">
+                        </div><br><br> <br>
+                        <!-- NEWSLETTER -->
                         <label class="label">NEWSLETTER</label><br><br>
-                        <label for="#">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> de 
+                        <label for="#" class="labelchoix">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> de 
                     Batman :</label>
+                        <!-- choix de la fréquence -->
                         <input type="checkbox" name="news" id="news"><br><br><br>
-                        <div>
-                            <label for="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter  <span>
+                        <div class="choix">
+                            <br>
+                            <input list="choix" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
+                            <datalist id="choix">
+                                <option value="Une fois par semaine">
+                                <option value="Une fois toutes les 2 semaines (2fois/mois)">
+                                <option value="Une fois par mois">
+                                <option value="Une fois tous les trois mois">
+                                <option value="Une fois tous les six mois">
+                            </datalist>
+                            <span style="height: 100%; "> 
                                 <img src="./Assets/Logos/icon_fleche_2.png" alt="">
-                            </span></label>
-                            <input list="frequence">
-                            <datalist id="frequence">
-                            <option value="Une fois par semaine">
-                            <option value="Une fois toutes les 2 semaines (2fois/mois)">
-                            <option value="Une fois par mois">
-                            <option value="Une fois tous les trois mois">
-                            <option value="Une fois tous les six mois">
-                        </datalist><br><br><br>
-
+                            </span>
+                        </div><br><br><br>
+                        <!--  -->
+                        <div class="recevoirnews">
+                            <label for="#" class="labelchoix">Souhaitez-vous recevoir des news</label>
                         </div>
-                        <label for="#">Souhaitez-vous recevoir des news</label><br>
-                        <input type="button" value="Des films">
-                        <input type="button" value="Des comics">
-                        <input type="button" value="De tout"><br><br>
+                        <br>
+                        <div class="film">
+                            <a href="#"> Des films</a>
+                            <a href="#">Des comics</a>
+                            <a href="#"> De tout</a>
+                        </div>
+                        <br><br>
+                        <!-- Message -->
                         <label for="" class="label">MESSAGE</label><br><br>
-                        <textarea name="commentaire" id="commentaire" cols="30" rows="10">Laissez un commentaire pour la communauté</textarea><br>
-                        <input type="submit" value="Confirmer">
+                        <div class="textarea">
+                            <!-- <label for=""> Laissez un commentaire pour la communauté</label> -->
+                            <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Laissez un commentaire pour la communauté"></textarea>
+                        </div><br> <br>
+                        <div class="confirmer">
+                            <input type="submit" value="CONFIRMER">
+                        </div>
                     </form>
                 </div>
             </div>
         </section>
         <!-- le pied -->
-        <section>
-            <div id="quote1">
-                <img src="./Assets/Logos/icon_guillemets_1.png" alt="quote1">
-            </div>
-            <div id="citation">
+        <section id="pied">
+            <div class="pied">
+                <div class="quote1">
+                    <img src="./Assets/Logos/icon_guillemets_1.png" alt="quote1">
+                </div>
+                <div class="citation">
 
-                <p> La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
-                <h5>The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)</h5>
+                    <p> La seule façon raisonnable de vivre en ce bas monde, <br> c'est en dehors des règles.</p><br>
+                    <h5>The Dark Knight : Le Chevalier Noir- <br> Le Joker à Batman (2008)</h5>
+                </div>
+                <div class="quote2">
+                    <img src="./Assets/Logos/icon_guillemets_2.png" alt="quote2">
+                </div>
             </div>
-            <div id="quote2">
-                <img src="./Assets/Logos/icon_guillemets_2.png" alt="quote2">
-            </div>
+
         </section>
     </main>
-    <footer>
-        <div>
-            <img src="./Assets/Logos/icon_WB.png" alt="WB">
-            <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
-        </div>
-        <div>
-            <a href="#">
-                <img src="./Assets/Logos/logo_sayna_white.png" alt="sayna">
-                <img src="./Assets/Logos/icon_x.png" alt="x">
-                <img src="./Assets/Logos/icon_DC.png" alt="DC">
-            </a>
-            <a href="#"><img src="./Assets/Logos/icon_facebook.png" alt="fbk"></a>
-            <a href="#"><img src="./Assets/Logos/icon_ig.png" alt="instagram"></a>
-            <a href="#"><img src="./Assets/Logos/icon_tw.png" alt="twitter"></a>
+    <footer id="footer">
+        <div class="footer">
+            <div class="WB">
+                <img src="./Assets/Logos/icon_WB.png" alt="WB">
+                <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="./Assets/Logos/logo_sayna_white.png" alt="sayna">
+                    <img src="./Assets/Logos/icon_x.png" alt="x">
+                    <img src="./Assets/Logos/icon_DC.png" alt="DC">
+                </a>
+                <a href="#"><img src="./Assets/Logos/icon_facebook.png" alt="fbk"></a>
+                <a href="#"><img src="./Assets/Logos/icon_ig.png" alt="instagram"></a>
+                <a href="#"><img src="./Assets/Logos/icon_tw.png" alt="twitter"></a>
+            </div>
         </div>
     </footer>
 </body>
