@@ -1,3 +1,5 @@
+                            /* importation/définition des police */
+                            
                             @font-face {
                                 font-family: 'Rajdhani_Medium', sans-serif;
                                 src: url("../fonts/Rajdhani/Rajdhani-Medium.ttf");
@@ -54,8 +56,9 @@
                                 padding-bottom: 20px;
                             }
                             
-                            .logo a:hover {
+                            .logo img:hover {
                                 color: #FFFF00;
+                                filter: invert(4%) sepia(99%) saturate(3292%) hue-rotate(356deg) brightness(102%) contrast(104%);
                             }
                             
                             li {
@@ -66,30 +69,18 @@
                                 text-decoration: underline;
                             }
                             
+                            .home:hover {
+                                color: #FFFF00;
+                            }
+                            /* section main */
+                            
                             #container {
                                 padding-top: 50px;
                             }
-                            /* main effet fade-in */
-                            /* nav {
-                                animation-name: fadein;
-                                animation-duration: 5s;
-                                animation-direction: normal;
-                            }
-                            
-                            @keyframes fadein {
-                                from {
-                                    margin-right: 100%;
-                                    width: 300%;
-                                }
-                                to {
-                                    margin-right: 0%;
-                                    width: 100%;
-                                }
-                            } */
+                            /* Animations (fade-in) */
                             
                             #container {
                                 animation: fadein 5s normal;
-                                /* animation-duration: 5s; */
                             }
                             
                             @keyframes fadein {
@@ -97,24 +88,20 @@
                                     margin: 0 auto;
                                     margin-left: -100%;
                                     width: 100%;
-                                    /* margin-right: 100%;
-                                    width: 300%; */
                                 }
                                 to {
                                     margin-left: 0%;
                                     width: 100%;
                                 }
                             }
+                            /*  */
                             
                             #batman,
                             #nemesis,
                             #allies,
                             #league {
-                                animation: fadein 15s normal;
-                                /* animation-timing-function: ease-in; */
-                                animation-delay: 16s;
-                                transition-delay: 5s;
-                                /* animation-duration: 5s; */
+                                animation: fadein 10s normal;
+                                animation-timing-function: ease-in;
                             }
                             
                             @keyframes fadein {
@@ -122,8 +109,27 @@
                                     margin: 0 auto;
                                     margin-left: -100%;
                                     width: 100%;
-                                    /* margin-right: 100%;
-                                    width: 300%; */
+                                }
+                                to {
+                                    margin-left: 0%;
+                                    width: 100%;
+                                }
+                            }
+                            /*  */
+                            
+                            #multimedia,
+                            #contact,
+                            #pied,
+                            #footer {
+                                animation: fadein 1s normal;
+                                animation-timing-function: steps(1, jump-start);
+                            }
+                            
+                            @keyframes fadein {
+                                from {
+                                    margin: 0 auto;
+                                    margin-left: -100%;
+                                    width: 100%;
                                 }
                                 to {
                                     margin-left: 0%;
@@ -171,15 +177,13 @@
                                 opacity: 1.0;
                                 background-image: linear-gradient(to right, rgb(237, 222, 191), rgb(138, 0, 9));
                             }
-                            /* fin mise en forme des boutons de la section Intro */
+                            /* mise en forme des logos à droite de la section Intro */
                             
                             #logoIntro {
                                 margin: auto;
                                 text-align: center;
                                 float: right;
                                 display: block;
-                                /* margin-top: -270px; */
-                                /* margin-right: -65px; */
                                 position: fixed;
                                 top: 270px;
                                 right: 40px;
@@ -191,10 +195,12 @@
                                 display: block;
                                 margin: auto;
                             }
+                            /* hover des logos à droite de la section Intro */
                             
                             #logoIntro img:hover {
-                                background-color: #FFFF00;
+                                filter: invert(4%) sepia(99%) saturate(3292%) hue-rotate(356deg) brightness(102%) contrast(104%);
                             }
+                            /* mise en forme de la flèche section intro */
                             
                             #fleche {
                                 text-align: center;
@@ -267,12 +273,10 @@
                                 display: flex;
                                 justify-content: center;
                                 margin-top: -50px;
-                                /* border: #FFFF00 3px solid; */
                             }
                             
                             .card img {
                                 max-width: 100%;
-                                /* transition: with 2s; */
                             }
                             
                             .card h5 {
@@ -343,7 +347,6 @@
                                 border-bottom-right-radius: 10px;
                                 border-top-right-radius: 10px;
                                 border: solid 1px rgba(196, 196, 196, 0.4);
-                                /* border-radius: 5px; */
                                 text-align: justify;
                                 padding: 10px;
                                 background-image: linear-gradient( to right, rgba(237, 222, 191, 0.3), rgba(25, 88, 125, 0.4));
@@ -369,8 +372,12 @@
                                 color: #FFFF00;
                             }
                             
-                            #video {
+                            .video {
                                 margin-top: 100px;
+                            }
+                            
+                            .video img:hover {
+                                box-shadow: rgba(255, 255, 255, 0.4) 0 4px 25px 5px;
                             }
                             /* PRENONS CONTACT */
                             
@@ -406,7 +413,6 @@
                             }
                             
                             #Aemail {
-                                /* border-bottom: 2px solid rgba(196, 196, 196, 0.4); */
                                 background: none;
                                 border: none;
                             }
@@ -419,24 +425,48 @@
                             .choix {
                                 border-bottom: 2px solid rgba(196, 196, 196, 0.4);
                                 width: 70%;
-                                /* padding-bottom: -10px; */
                             }
                             
-                            .choix input {
+                            .menu {
                                 color: #c4c4c4;
-                                width: 95%;
-                                background: none;
-                                border: none;
-                                /* margin-top: 90px; */
                             }
                             
-                            .form span img {
-                                width: 3%;
+                            .sous {
+                                display: none;
+                                /* position: absolute;
+                                width: 52.2%;
+                                z-index: 1000; */
+                            }
+                            
+                            ul li:hover .sous {
+                                display: block;
+                                background-image: linear-gradient( to right, rgba(237, 222, 191, 0.2), rgba(25, 88, 125, 0.3));
+                            }
+                            
+                            .sous a {
+                                display: block;
+                                color: #c4c4c4;
+                                text-decoration: none;
+                                border-bottom: 2px solid rgba(196, 196, 196, 0.4);
+                                padding: 5px 0;
+                            }
+                            
+                            .sous a:hover {
+                                background-color: rgba(196, 196, 196, 0.3);
+                            }
+                            
+                            .deroulant a {
+                                color: #c4c4c4;
+                                text-decoration: none;
+                                background: none;
+                            }
+                            
+                            .deroulant span img {
+                                width: 2%;
                                 transform: rotate(90deg);
                                 position: relative;
                                 top: 0;
-                                left: -18px;
-                                /* border: solid 3px #BCBBBD; */
+                                margin-left: 100px;
                             }
                             
                             .recevoirnews {
@@ -452,6 +482,7 @@
                             
                             .film a {
                                 color: white;
+                                font-weight: bold;
                                 border: 1px solid;
                                 border-image: linear-gradient(to right, #C4C4C4, #19587D);
                                 border-image-slice: 1;
@@ -460,13 +491,16 @@
                                 font-family: 'Rajdhani_Medium';
                                 font-size: 13px;
                             }
+                            
+                            .film a:hover {
+                                opacity: 0.9;
+                                background-image: linear-gradient(to right, #C4C4C4, #19587D);
+                            }
                             /* Message */
                             
                             .textarea {
-                                /* border: #FFFF00 2px solid; */
                                 width: 70%;
                                 border-bottom: 2px solid rgba(196, 196, 196, 0.4);
-                                /* margin-top: -70px; */
                                 height: 3vh;
                             }
                             
@@ -476,7 +510,6 @@
                                 width: 100%;
                                 height: 100%;
                                 padding-bottom: -70px;
-                                /* border-bottom: 2px solid rgba(196, 196, 196, 0.4); */
                                 color: #c4c4c4;
                             }
                             /* mise en forme bouton "confirmer" */
@@ -489,9 +522,7 @@
                             }
                             
                             .confirmer input {
-                                /* width: 100%; */
                                 background-image: linear-gradient(to right, rgba(13, 14, 9, 0.5), rgba(138, 0, 9, 0.9));
-                                /* text-decoration: bold; */
                                 font-family: 'Rajdhani_Medium';
                                 font-size: 15px;
                                 color: #FFFFFF;
@@ -508,13 +539,11 @@
                             /* citation */
                             
                             .pied {
-                                /* border: #FFFF00 2px solid; */
                                 display: flex;
                                 justify-content: center;
                             }
                             
                             .citation {
-                                /* border: red 2px solid; */
                                 text-align: center;
                                 margin-top: 90px;
                                 margin-left: 70px;
@@ -533,7 +562,6 @@
                             }
                             
                             .quote2 {
-                                /* border: green 2px solid; */
                                 padding-top: 180px;
                                 margin-left: 70px;
                             }
@@ -568,7 +596,4 @@
                             .logo a {
                                 margin-right: 20px;
                             }
-                            /* .container { */
-                            /* border: solid 1px #BCBBBD; */
-                            /* width: 80%; */
-                            /* } */
+                            /* fin du css pour la partie 1 du projet BATMAN :) */

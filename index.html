@@ -10,10 +10,8 @@
 </head>
 
 <body>
-
     <!-- l'entête -->
     <header>
-        <!-- <div class="container"> -->
         <nav>
             <div class="logo">
                 <a href=""><img alt="logo" src=" Assets/Logos/logohome.png" /></a>
@@ -22,11 +20,9 @@
                 <ul id="menu">
                     <li>
                         <a class="home" href="#">HOME</a>
-
                     </li>
                     <li>
                         <a class="home" href="#"></a>
-
                     </li>
                     <li>
                         <a class="home" href="#"></a>
@@ -36,7 +32,6 @@
 
             </div>
         </nav>
-        <!-- </div> -->
     </header>
     <!-- le corps -->
     <main>
@@ -48,8 +43,8 @@
                 </p>
                 <h2 class="h2Intro"> Il est Batman.</h2>
                 <div id="boutonIntro">
-                    <a href="#"> VOIR LE HEROS</a>
-                    <a href="#">LES ADVERSAIRES</a>
+                    <a href="#batman"> VOIR LE HEROS</a>
+                    <a href="#nemesis">LES ADVERSAIRES</a>
                 </div>
             </div>
             <div id="logoIntro">
@@ -57,8 +52,7 @@
                 <div>
                     <img alt="fbk" src=" ./Assets/Logos/icon_facebook.png" />
                     <img alt="instagram" src=" ./Assets/Logos/icon_ig.png" />
-                    <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" />
-                </div>
+                    <img alt="twitter" src=" ./Assets/Logos/icon_tw.png" /></div>
 
                 <img alt="logoBATMAN" src=" ./Assets/Logos/logo_bat_fleche_2.png" />
             </div>
@@ -195,7 +189,7 @@
                 </div>
                 <img src="./Assets/Logos/icon_fleche_2.png" alt="fleche2" class="flecheimg">
             </div>
-            <div id="video">
+            <div class="video">
                 <img src="./Assets/Illustrations/Bathome_ba2.png" width="100%" alt="video">
             </div>
         </section>
@@ -205,31 +199,42 @@
                 <h1>PRENONS CONTACT</h1>
                 <!-- formulaire -->
                 <div class="form">
-                    <form action="#">
+                    <form action="./Assets/Illustrations/Popup_Box.png" target="framename">
                         <!-- ADRESSE EMAIL -->
                         <label class="label">ADRESSE MAIL</label><br><br>
                         <div class="email">
-                            <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email">
+                            <input type="email" name="Aemail" id="Aemail" placeholder="Adresse Email" required>
                         </div><br><br> <br>
                         <!-- NEWSLETTER -->
                         <label class="label">NEWSLETTER</label><br><br>
                         <label for="#" class="labelchoix">En cochant cette case vous acceptez de recevoir l’actualité concernant les <br> de 
                     Batman :</label>
                         <!-- choix de la fréquence -->
-                        <input type="checkbox" name="news" id="news"><br><br><br>
+                        <input type="checkbox" name="news" id="news" required><br><br><br>
                         <div class="choix">
                             <br>
-                            <input list="choix" placeholder="Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter">
-                            <datalist id="choix">
-                                <option value="Une fois par semaine">
-                                <option value="Une fois toutes les 2 semaines (2fois/mois)">
-                                <option value="Une fois par mois">
-                                <option value="Une fois tous les trois mois">
-                                <option value="Une fois tous les six mois">
-                            </datalist>
-                            <span style="height: 100%; "> 
-                                <img src="./Assets/Logos/icon_fleche_2.png" alt="">
-                            </span>
+                            <!-- menu déroulant -->
+                            <div class="menu">
+
+                                <ul>
+                                    <li class="deroulant">
+                                        <a href="#">Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter 
+                                            <span> 
+                                                <img src="./Assets/Logos/icon_fleche_2.png" alt="">
+                                            </span>
+                                        </a>
+                                        <ul class="sous">
+                                            <li> <a href="#">Une fois par semaine</a> </li>
+                                            <li> <a href="#">Une fois toutes les 2 semaines (2fois/mois)</a> </li>
+                                            <li> <a href="#">Une fois par mois</a> </li>
+                                            <li> <a href="#">Une fois tous les trois mois</a> </li>
+                                            <li> <a href="#">Une fois tous les six mois</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+
+
                         </div><br><br><br>
                         <!--  -->
                         <div class="recevoirnews">
@@ -245,9 +250,9 @@
                         <!-- Message -->
                         <label for="" class="label">MESSAGE</label><br><br>
                         <div class="textarea">
-                            <!-- <label for=""> Laissez un commentaire pour la communauté</label> -->
                             <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="Laissez un commentaire pour la communauté"></textarea>
                         </div><br> <br>
+
                         <div class="confirmer">
                             <input type="submit" value="CONFIRMER">
                         </div>
